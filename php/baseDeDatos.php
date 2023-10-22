@@ -274,7 +274,7 @@ public function reservar(){
     $query = $this->connection->query("SELECT SUM(total_cost) FROM reservations where user_id = ". $_SESSION['user_id'] );
     echo "Coste total de reservas: " . $query->fetch_row()[0];
 }
-}F
+}
 
 public function hacerResena(){
    $this->createConnection();
