@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+
+    <!-- Definir el autor del fichero html -->
+    <meta name="author" content="Alexander López Méndez" />
+
+    <!-- Definir la descripción del fichero html -->
+    <meta
+      name="description"
+      content="Documento con información sobre recursos turísticos de Armenia y poder reservarlos"
+    />
+
+    <!-- Definir las palabras claves -->
+    <meta name="keywords" content="pais,armenia,reservas,hotel,restaurante" />
+
+    <!-- Definir la ventana grafica-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="estilo/estilo.css" />
+    <link rel="stylesheet" href="estilo/layout.css" />
+    <link rel="stylesheet" href="estilo/archivosPHP.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Armenia</title>
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="multimedia/imagenes/bandera-armenia.jpg"
+        alt="Bandera de Armenia"
+      />
+      <h1>Armenia</h1>
+    </header>
+    <nav>
+      <a href="index.html" accesskey="i" tabindex="0">Índice</a>
+      <a href="gastronomia.html" accesskey="g" tabindex="1">Gastronomia</a>
+      <a href="meteorologia.html" accesskey="m" tabindex="2">Meteorologia</a>
+      <a href="reservas.html" accesskey="r" tabindex="3">Reservas</a>
+      <a href="rutas.html" accesskey="t" tabindex="4">Rutas</a>
+      <a href="juego.html" accesskey="j" tabindex="5">Juego</a>
+    </nav>
+
+    <main>
+      <h2>Entrar en la zona de reservas</h2>
+      <ul>
+        <li>
+          <a href="php/registro.php" title="Registrarse"
+            >Registrarse / Iniciar sesión</a
+          >
+        </li>
+      </ul>
+
+      <h2>Cómo reservo un recurso turistico?</h2>
+      <ol>
+        <li>
+          Crear una cuenta
+          <ol>
+            <li>Hacer clic en el enlace "Registrarse".</li>
+            <li>Rellenar el formulario.</li>
+            <li>
+              Hacer clic en el botón "Conectar a la base de datos".
+              <ul>
+                <li>
+                  Si se realiza de forma exitosa, se mostrará el mensaje "Cuenta
+                  anadida correctamente".
+                </li>
+                <li>
+                  En caso contrario se mostrará un mensaje describiendo el
+                  error.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+        <li>
+          Acceder a la sección de iniciar sesión
+          <ul>
+            <li>
+              Se puede hacer desde el mensaje que se muestra en la ventana de
+              registro.
+            </li>
+            <li>
+              Haciendo clic en el menú de navegación que se muestra en la parte
+              superior, para esta opción es necesario que el registro haya sido
+              exitoso.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Iniciar sesión
+          <ol>
+            <li>
+              Rellenar el formulario con la misma información con la que se
+              realizó el registro.
+            </li>
+            <li>
+              Hacer clic en el botón "conectar a la base de datos".
+              <ul>
+                <li>
+                  Si se realiza de forma exitosa, se mostrará un mensaje de
+                  bienvenida, en el que se encontrará un enlace a la sección de
+                  reservas. Este hay que clicarlo para acceder a ella.
+                </li>
+                <li>
+                  En caso contrario se mostrará el siguiente mensaje "No existe
+                  esta cuenta". Se tiene que revisar que la información
+                  proporcionada sea la correcta.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+        <li>
+          Relizar una reserva
+          <ol>
+            <li>Seleccionar dia que se quiere reservar.</li>
+            <li>Seleccionar la hora que se quiere reservar.</li>
+            <li>
+              Hacer clic en el botón "Mostrar recursos turisticos".
+              <ul>
+                <li>Se mostrará la lista de recursos.</li>
+                <li>
+                  De la lista de recursos se podrá seleccionar uno o varios
+                </li>
+              </ul>
+            </li>
+            <li>
+              Seleccionar el checkbox (caja) al lado del texto "Marcar para
+              reservar".
+              <ul>
+                <li>Efectivo</li>
+                <li>Tarjeta</li>
+                <li>Bizum</li>
+              </ul>
+            </li>
+
+            <li>
+              Seleccionar método de pago en la parte inferior de la página.
+            </li>
+            <li>Hacer clic en el botón "Realizar reservas".</li>
+          </ol>
+        </li>
+        <li>
+          Añadir una reseña
+          <ol>
+            <li>Es necesario tener alguna reserva ya realizada.</li>
+            <li>Hacer clic en el botón "Mostrar reservas".</li>
+            <li>Añadir un numero en la caja de reseña (valores de 1 a 5).</li>
+            <li>Añadir un comentario (opcional).</li>
+            <li>Hacer clic en el botón "Enviar reseña".</li>
+          </ol>
+        </li>
+      </ol>
+    </main>
+
+    <footer>
+      <img src="multimedia/imagenes/HTML5.png" alt="HTML5 válido!" />
+      <img src="multimedia/imagenes/CSS3.png" alt="CSS3 válido!" />
+    </footer>
+  </body>
+</html>

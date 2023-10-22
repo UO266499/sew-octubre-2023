@@ -1,0 +1,68 @@
+/**********************************
+ Alexander López Méndez - UO266499
+**********************************/
+
+/* Especificidad: 0 0 1 */
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 1rem;
+  color: #000000;
+  margin: 0%;
+  background-color: #fff;
+}
+
+/* Especificidad: 0 0 1 */
+article {
+  height: 30vh;
+  width: 100%;
+}
+
+/* Especificidad: 0 0 1 */
+main {
+  margin: 0% 5%;
+}
+
+/* Especificidad: 0 0 2 */
+section img {
+  width: 40%;
+}
+
+/* Especificidad: 0 0 1 */
+header {
+  background-color: #d6d6d6;
+}
+
+/* Especificidad: 0 0 2 */
+nav a {
+  text-decoration: none;
+  /* Para cambiar el color de enlace a negro en vez de azul*/
+  color: #000000;
+}
+
+/* Especificidad: 0 0 1 */
+nav {
+  background-color: #f1f1f1;
+}
+
+/* Especificidad: 0 0 1 */
+footer {
+  background-color: #383838;
+  color: #fff;
+}
+
+/* Especificidad: 0 0 1 */
+table {
+  width: fit-content;
+  justify-self: center;
+}
+
+/* Especificidad: 0 0 1, 0 0 1 */
+td,
+th {
+  border: 0.0625em solid #dddddd;
+}
+
+/* Especificidad: 0 0 1 */
+video {
+  height: 50vh;
+}

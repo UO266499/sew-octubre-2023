@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rutas>
+ <ruta>
+  <nombre>Azdahak - Geghmaghan - Armenia</nombre>
+  <tipo>Senderismo</tipo>
+  <transporte>A pie</transporte>
+  <fechaInicio>25-10-2023</fechaInicio>
+  <horaInicio>09:00</horaInicio>
+  <duracion>7 horas</duracion>
+  <agencia>Sin agencia</agencia>
+  <descripcion>Travesía de 3 días desde la ribera del lago Sevan. Partiendo de Tsaghkasten.</descripcion>
+  <tipoDePersonas>Personas experimentadas en senderismo con alto desnivel</tipoDePersonas>
+  <lugarInicio>Aknalich</lugarInicio>
+  <direccionInicio>Tsaghkasten</direccionInicio>
+  <coordenadasInicio latitud="40.2842983" longitud="44.924846" altitud="3015"/>
+  <referencias>
+   <referencia>https://es.wikipedia.org/wiki/Lago_Seván</referencia>
+   <referencia>https://es.wikiloc.com/rutas-senderismo/azdahak-geghmaghan-armenia-40874550</referencia>
+   <referencia>https://en.wikipedia.org/wiki/Azhdahak_(volcano)</referencia>
+  </referencias>
+  <recomendacion>6</recomendacion>
+  <hitos>
+   <hito>
+    <nombreHito>Geghmaghan</nombreHito>
+    <descripcionHito>Primer tramo, llegada a Geghmaghan</descripcionHito>
+    <coordenadasHito latitud="40.266414" longitud="44.934608" altitud="3123"/>
+    <distanciaAnterior kilometros="3"/>
+    <galeriaFotos>
+     <foto>geghm.jpg</foto>
+    </galeriaFotos>
+   </hito>
+   <hito>
+    <nombreHito>LLegada a Aghusar</nombreHito>
+    <descripcionHito>Parada en la montaña de Aghusar</descripcionHito>
+    <coordenadasHito latitud="40.2570692" longitud="44.9452385" altitud="3339"/>
+    <distanciaAnterior kilometros="2.5"/>
+    <galeriaFotos>
+     <foto>Aghusar.jpg</foto>
+    </galeriaFotos>
+   </hito>
+   <hito>
+    <nombreHito>Azhdahak</nombreHito>
+    <descripcionHito>LLegada al volcan Azhdahak</descripcionHito>
+    <coordenadasHito latitud="40.226336" longitud="44.9470233" altitud="3597"/>
+    <distanciaAnterior kilometros="5"/>
+    <galeriaFotos>
+     <foto>Ajdahak.jpg</foto>
+    </galeriaFotos>
+    <galeriaVideos>
+     <video>Azhdahak.mp4</video>
+    </galeriaVideos>
+   </hito>
+  </hitos>
+  <planimetria>azdahak-geghmaghan.kml</planimetria>
+  <altimetria>azdahak-geghmaghan.svg</altimetria>
+ </ruta>
+ <ruta>
+  <nombre>Krrnat'akht , Ijevan</nombre>
+  <tipo>Senderismo</tipo>
+  <transporte>A pie</transporte>
+  <fechaInicio>25-10-2023</fechaInicio>
+  <horaInicio>9:20</horaInicio>
+  <duracion>2.2 horas</duracion>
+  <agencia>Sin agencia</agencia>
+  <descripcion>La ruta comienza en un pequeño sendero que transcurre a lo largo del río Sarnajur, río que hay que cruzar en varias ocasiones( no hay puentes), el camino es por el cañón formado. La vuelta interesante por bosque frondoso en un camino que va unos metros más arriba.</descripcion>
+  <tipoDePersonas>Personas con mucha experiencia</tipoDePersonas>
+  <lugarInicio>Río Sarnajur</lugarInicio>
+  <direccionInicio>Este, siguiendo el rio</direccionInicio>
+  <coordenadasInicio latitud="40.902346" longitud="45.125623" altitud="772"/>
+  <referencias>
+   <referencia>https://www.meteoprog.com/es/weather/Krrnatakht/</referencia>
+   <referencia>https://es.wikiloc.com/rutas-senderismo/krrnatakht-ijevan-armenia-89643331</referencia>
+   <referencia>https://es.wikipedia.org/wiki/Ijeván</referencia>
+  </referencias>
+  <recomendacion>8</recomendacion>
+  <hitos>
+   <hito>
+    <nombreHito>Giro a la izquierda</nombreHito>
+    <descripcionHito>Una vez seguido el rio, aqui giramos a la izquierda</descripcionHito>
+    <coordenadasHito latitud="40.907256" longitud="45.107973" altitud="880"/>
+    <distanciaAnterior kilometros="1.6"/>
+    <galeriaFotos>
+     <foto>sarnajur-giro.jpg</foto>
+    </galeriaFotos>
+   </hito>
+
+    <hito>
+    <nombreHito>Damos la vuelta</nombreHito>
+    <descripcionHito>Una vez llegado aquí, damos la vuelta</descripcionHito>
+    <coordenadasHito latitud="40.904384" longitud="45.087590" altitud="931"/>
+    <distanciaAnterior kilometros="2.4"/>
+    <galeriaFotos>
+     <foto>sarnajur-vuelta.jpg</foto>
+    </galeriaFotos>
+   </hito>
+
+    <hito>
+    <nombreHito>Giro a la derecha</nombreHito>
+    <descripcionHito>Una vez seguido el rio, aqui giramos a la derecha, es el mismo lugar del inicio, donde se giro a la izquierda</descripcionHito>
+    <coordenadasHito latitud="40.907256" longitud="45.107973" altitud="880"/>
+    <distanciaAnterior kilometros="1.6"/>
+    <galeriaFotos>
+     <foto>sarnajur-giro.jpg</foto>
+    </galeriaFotos>
+   </hito>
+
+       <hito>
+    <nombreHito>LLegada al inicio</nombreHito>
+    <descripcionHito>Aqui se termina la ruta, en el sitio donde se empezó</descripcionHito>
+    <coordenadasHito latitud="40.902346" longitud="45.125623" altitud="772"/>
+    <distanciaAnterior kilometros="1.6"/>
+    <galeriaFotos>
+     <foto>sarnajur-inicio.jpg</foto>
+    </galeriaFotos>
+   </hito>
+
+  </hitos>
+  <planimetria>Krrnat'akht.kml</planimetria>
+  <altimetria>Krrnat'akht.svg</altimetria>
+ </ruta>
+ <ruta>
+  <nombre>Cascada Hegharor</nombre>
+  <tipo>Senderismo</tipo>
+  <transporte>A pie</transporte>
+  <fechaInicio>30-10-2023</fechaInicio>
+  <horaInicio>10:00</horaInicio>
+  <duracion>4.5 horas</duracion>
+  <agencia>Sin agencia</agencia>
+  <descripcion>Cascada Hegharor. Aragats. Es una ruta muy sencilla, preciosa, sin complicaciones técnicas. Lo único, un par de subidas pedregosas que te quitan el aire</descripcion>
+  <tipoDePersonas>Personas con algo de experiencia y aguante</tipoDePersonas>
+  <lugarInicio>Cascada Hegharor</lugarInicio>
+  <direccionInicio>Este por el sendero</direccionInicio>
+  <coordenadasInicio latitud="40.489434" longitud="44.319350" altitud="2295"/>
+  <referencias>
+   <referencia>https://www.belmontedemiranda.es/senderismo/</referencia>
+   <referencia>https://www.asturnatura.com/turismo/ovinana-de-belmonte/2566.html</referencia>
+   <referencia>http://www.prerromanicoasturiano.es</referencia>
+  </referencias>
+  <recomendacion>6</recomendacion>
+  <hitos>
+    <hito>
+    <nombreHito>Camino con vistas</nombreHito>
+    <descripcionHito>Seguimos el sendero hasta el final</descripcionHito>
+    <coordenadasHito latitud="40.493683" longitud="44.258806" altitud="2659"/>
+    <distanciaAnterior kilometros="4.2"/>
+    <galeriaFotos>
+     <foto>Hegharor-medio.jpg</foto>
+    </galeriaFotos>
+   </hito>
+     <hito>
+    <nombreHito>Llegada a la zona de vuelta</nombreHito>
+    <descripcionHito>Llegamos al final del sendero y damos la vuelta</descripcionHito>
+    <coordenadasHito latitud="40.499493" longitud="44.207599" altitud="2995"/>
+    <distanciaAnterior kilometros="3.7"/>
+    <galeriaFotos>
+     <foto>Hegharor-final.jpg</foto>
+    </galeriaFotos>
+   </hito>
+    <hito>
+    <nombreHito>Camino con vistas</nombreHito>
+    <descripcionHito>Seguimos el sendero hasta el final</descripcionHito>
+    <coordenadasHito latitud="40.493683" longitud="44.258806" altitud="2659"/>
+    <distanciaAnterior kilometros="3.7"/>
+    <galeriaFotos>
+     <foto>Hegharor-medio.jpg</foto>
+    </galeriaFotos>
+   </hito>
+   <hito>
+    <nombreHito>Llegada a la cascada</nombreHito>
+    <descripcionHito>Terminamos la ruta</descripcionHito>
+    <coordenadasHito latitud="40.489434" longitud="44.319350" altitud="2295"/>
+    <distanciaAnterior kilometros="4"/>
+    <galeriaFotos>
+     <foto>Hegharor-inicio.jpg</foto>
+    </galeriaFotos>
+   </hito>
+  </hitos>
+  <planimetria>Hegharor.kml</planimetria>
+  <altimetria>Hegharor.svg</altimetria>
+ </ruta>
+</rutas>
