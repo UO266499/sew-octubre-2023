@@ -13,12 +13,17 @@ class BaseDeDatos
     
     public function __construct(){
         $this->username = "DBUSER2023";
-        $this->password = "1234";
+        $this->password = "DBPSWD2023";
         $this->server = "localhost";
-        $this->db = "reservas2";
+        $this->db = "reservas";
     }
     
     public function createConnection(){
+
+        // Local
+        // $this->connection = new mysqli($this->server, $this->username, $this->password, $this->db);
+
+        // Servidor
         $this->connection = mysqli_init();
         mysqli_ssl_set($this->connection,NULL,NULL, "./DigiCertGlobalRootCA.crt.pem", NULL, NULL);
         mysqli_real_connect($this->connection, "reservas.mysql.database.azure.com", "adminsew", "test123...", "reservas", 3306, MYSQLI_CLIENT_SSL);   
@@ -152,9 +157,9 @@ public function mostrarRecursos(){
             echo "<p>Capacidad: ".$capacidad ."/". $row[6] . "</p>";
             echo '<label for="'.$row[0].'">Marcar para reservar</label>';
             if($capacidad == $row[6]){
-                echo '<input type="checkbox" id="'.$row[0].'" name="'.$row[0].'" disabled/>';
+                echo '<input type="checkbox" id="'.$row[0]. $capacidadActual.'" name="'.$row[0].'" disabled/>';
             }else{
-            echo '<input type="checkbox" id="'.$row[0].'" name="'.$row[0].'"/>';
+            echo '<input type="checkbox" id="'.$row[0]. $capacidadActual.'" name="'.$row[0].'"/>';
             }
             
         }
@@ -183,6 +188,7 @@ public function verReservas(){
             $paymentMethod = $this->connection->query("SELECT payment_method from payments WHERE reservation_id = " . $row[0]);
             $initDate =DateTime::createFromFormat('Y-m-d',$row[3]);
             $finDate = DateTime::createFromFormat('Y-m-d',$row[5]);
+            $extraId = rand();
             if($rowIsReviewed == null){
                 echo "<form action='#' method='post'>";
                 echo "<h3>" . $rowResource[1] . "</h3>";
@@ -190,10 +196,10 @@ public function verReservas(){
                 echo "<p>Fecha fin: ". $row[5]." ".$row[6]. "</p>";
                 echo "<p>Precio: ".intval($rowResource[3],10) *( $initDate->diff($finDate)->days + 1)  ."</p>";
                 echo "<p>Metodo de pago: " . $paymentMethod->fetch_row()[0] ."</p>";
-                echo '<label for="'.$rowResource[0].'">Reseña:</label>';
-                echo '<input type="number" id="'.$rowResource[0].'" name="'.$rowResource[0].'" min="1" max="5"/>';
-                echo '<label for="comentario'.$rowResource[0].'">Comentarios:</label>';
-                echo '<input type="text" id="comentario'.$rowResource[0].'" name="comentarios" />';
+                echo '<label for="'.$rowResource[0].$extraId.'">Reseña:</label>';
+                echo '<input type="number" id="'.$rowResource[0].$extraId.'" name="'.$rowResource[0].'" min="1" max="5"/>';
+                echo '<label for="comentario'.$rowResource[0].$extraId.'">Comentarios:</label>';
+                echo '<input type="text" id="comentario'.$rowResource[0].$extraId.'" name="comentarios" />';
                 echo "<button type='submit' name='resena'> Enviar reseña </button>";
                 echo "</form>";
             }else{
@@ -202,10 +208,10 @@ public function verReservas(){
                 echo "<p>Fecha fin: ". $row[5]." ".$row[6]. "</p>";
                 echo "<p>Precio: ".intval($rowResource[3],10) *( $initDate->diff($finDate)->days + 1)  ."</p>";
                 echo "<p>Metodo de pago:" . $paymentMethod->fetch_row()[0]."</p>";
-                echo '<label for="'.$rowResource[0].'">Reseña:</label>';
-                echo  '<input type="number" id="'.$rowResource[0].'" name="'.$rowResource[0].'" value="'.$rowIsReviewed[3].'"disabled/>';
-                echo '<label for="comentario'.$rowResource[0].'">Comentarios:</label>';
-                echo '<input type="text" id="comentario'.$rowResource[0].'" name="comentarios" value="'.$rowIsReviewed[4] .'" disabled/>';   
+                echo '<label for="'.$rowResource[0].$extraId.'">Reseña:</label>';
+                echo  '<input type="number" id="'.$rowResource[0].$extraId.'" name="'.$rowResource[0].'" value="'.$rowIsReviewed[3].'"disabled/>';
+                echo '<label for="comentario'.$rowResource[0].$extraId.'">Comentarios:</label>';
+                echo '<input type="text" id="comentario'.$rowResource[0].$extraId.'" name="comentarios" value="'.$rowIsReviewed[4] .'" disabled/>';   
             }
         }
     }

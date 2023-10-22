@@ -13,7 +13,6 @@ body {
 
 /* Especificidad: 0 0 1 */
 article {
-  height: 30vh;
   width: 100%;
 }
 
