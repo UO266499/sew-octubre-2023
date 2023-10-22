@@ -21,7 +21,7 @@ class BaseDeDatos
     public function createConnection(){
         $this->connection = mysqli_init();
         mysqli_ssl_set($this->connection,NULL,NULL, "./DigiCertGlobalRootCA.crt.pem", NULL, NULL);
-        mysqli_real_connect($this->connection, "sewdb.mysql.database.azure.com", "adminsew", "test123...", "reservas", 3306, MYSQLI_CLIENT_SSL);   
+        mysqli_real_connect($this->connection, "reservas.mysql.database.azure.com", "adminsew", "test123...", "reservas", 3306, MYSQLI_CLIENT_SSL);   
     }
 
     public function inicializarBD(){
