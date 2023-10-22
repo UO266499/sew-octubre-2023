@@ -24,10 +24,9 @@ class BaseDeDatos
     //$connection = new mysqli($this->server, $this->username, $this->password, $this->db);
 
     // Servidor
-
      $this->connection = mysqli_init();
      mysqli_ssl_set($this->connection,NULL,NULL, "./DigiCertGlobalRootCA.crt.pem", NULL, NULL);
-     mysqli_real_connect($this->connection, "sewdb.mysql.database.azure.com", "adminsew", "test123...", "reservas", 3306, MYSQLI_CLIENT_SSL);   
+     mysqli_real_connect($this->connection, "reservas.mysql.database.azure.com", "adminsew", "test123...", "reservas", 3306, MYSQLI_CLIENT_SSL);   
 
     $query = "CREATE TABLE IF NOT EXISTS users (
         user_id INT AUTO_INCREMENT PRIMARY KEY,
